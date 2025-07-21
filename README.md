@@ -29,7 +29,7 @@ git clone https://github.com/YOUR_USERNAME/secure-file-encryptor.git
 cd secure-file-encryptor
 
 
-= Setup MySQL Database
+- Setup MySQL Database
 
 
 Create a database and table:
@@ -46,6 +46,9 @@ CREATE TABLE encrypted_files (
     hash VARCHAR(64),
     content LONGBLOB
 );
+
+
+
 
 - Configure Database Credentials
 
