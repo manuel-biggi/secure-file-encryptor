@@ -28,3 +28,20 @@ A Java-based application that encrypts files and folders using AES, RSA, or XOR 
 git clone https://github.com/YOUR_USERNAME/secure-file-encryptor.git
 cd secure-file-encryptor
 
+### 2. Setup MySQL Database
+
+Create a database and table:
+
+```sql
+CREATE DATABASE secure_file_db;
+
+USE secure_file_db;
+
+CREATE TABLE encrypted_files (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    file_name VARCHAR(255),
+    type VARCHAR(50),
+    hash VARCHAR(64),
+    content LONGBLOB
+);
+
