@@ -29,7 +29,7 @@ git clone https://github.com/YOUR_USERNAME/secure-file-encryptor.git
 cd secure-file-encryptor
 
 
-### 2. Setup MySQL Database
+= Setup MySQL Database
 
 
 Create a database and table:
@@ -46,5 +46,16 @@ CREATE TABLE encrypted_files (
     hash VARCHAR(64),
     content LONGBLOB
 );
+
+- Configure Database Credentials
+
+Create a file at: `src/main/resources/config.properties`
+
+Add your DB credentials:
+
+```properties
+db.url=jdbc:mysql://localhost:3306/secure_file_db
+db.user=your_username
+db.password=your_password
 
 
